@@ -12,7 +12,10 @@ dotenv.config()
 //connect to DB
 mongoose.connect(
     process.env.DB_CONNECT,
-    { useNewUrlParser: true, useUnifiedTopology: true},
+    { 
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+    },
     ()=> console.log('Connected to db!')
 )
 
@@ -24,4 +27,4 @@ app.use('/api/user', authRoute)
 app.use('/api/posts', postRoute)
 
 
-app.listen(process.env.PORT || 3000, ()=> console.log("Server up and running on port 3000"))
+app.listen(process.env.PORT || 9000, ()=> console.log("Server up and running on port 3000"))

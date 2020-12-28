@@ -4,7 +4,8 @@
   "description": "testing for login and register api",
   "main": "index.js",
   "scripts": {
-    "moonLoveSun": "nodemon index.js"
+    "moonLoveSun": "nodemon index.js",
+    "start": "nodemon index.js"
   },
   "author": "ritik",
   "license": "UNLICENSED",

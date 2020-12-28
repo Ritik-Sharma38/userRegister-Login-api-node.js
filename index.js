@@ -11,7 +11,7 @@ dotenv.config()
 
 //connect to DB
 mongoose.connect(
-    "mongodb+srv://ritik:ritik123@cluster0.oh5dq.mongodb.net/portfolio?retryWrites=true&w=majority",
+    process.env.DB_CONNECT,
     { 
         useNewUrlParser: true,
         useUnifiedTopology: true,
